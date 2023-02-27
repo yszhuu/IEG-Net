@@ -1,7 +1,6 @@
-# GwcNet
+# IER-Net
 
-This is the implementation of the paper **Group-wise Correlation Stereo Network**, CVPR 19, Xiaoyang Guo, Kai Yang, Wukui Yang, Xiaogang Wang, and Hongsheng Li
-[\[Arxiv\]](https://arxiv.org/)
+This is the implementation of the paper **IER-Net: Information Entropy Refinement Network for Accurate Stereo Matching
 
 # How to use
 
@@ -10,7 +9,6 @@ This is the implementation of the paper **Group-wise Correlation Stereo Network*
 * Pytorch >= 0.4.1
 
 ## Data Preparation
-Download [Scene Flow Datasets](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html), [KITTI 2012](http://www.cvlibs.net/datasets/kitti/eval_stereo_flow.php?benchmark=stereo), [KITTI 2015](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo)
 
 ## Training
 **Scene Flow Datasets**
@@ -27,20 +25,3 @@ run the script `./scripts/kitti12_save.sh` and `./scripts/kitti15_save.sh` to sa
 ## Pretrained Models
 [Scene Flow](https://drive.google.com/file/d/1qiOTocPfLaK9effrLmBadqNtBKT4QX4S/view?usp=sharing)
 [KITTI 2012/2015](https://drive.google.com/file/d/1fOw2W7CSEzvSKzBAEIIeftxw6CuvH9Hl/view?usp=sharing)
-
-# Citation
-If you find this code useful in your research, please cite:
-
-```
-@inproceedings{guo2019group,
-  title={Group-wise Correlation Stereo Network},
-  author={Guo, Xiaoyang and Yang, Kai and Yang, Wukui and Wang, Xiaogang and Li, Hongsheng},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-  pages={3273--3282},
-  year={2019}
-}
-```
-
-# Acknowledgements
-
-Thanks to Jia-Ren Chang for opening source of his excellent work PSMNet. Our work is inspired by this work and part of codes in `models` are migrated from [PSMNet](https://github.com/JiaRenChang/PSMNet).
